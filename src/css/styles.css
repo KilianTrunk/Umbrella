@@ -1,0 +1,168 @@
+/* // ------------------------------ reusable ------------------------------ \\ */
+
+.vertical-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* // ------------------------------ navbar ------------------------------ \\ */
+
+.navbar-section-item {
+  color: #aaa;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-section-container:hover,
+.navbar-section-container:hover .navbar-section-item {
+  text-decoration: none;
+  color: #333;
+}
+
+.navbar-section-container {
+  height: 82px;
+}
+
+.navbar-section-container:hover,
+.navbar-section-container:active {
+  border-top: 6px solid rgb(88, 88, 88);
+  margin-top: -3px;
+}
+
+.navbar-section-logo {
+  height: 46px;
+}
+
+/* // ------------------------------ home ------------------------------ \\ */
+
+.home-section {
+  min-height: 90vh;
+  background-blend-mode: normal;
+  background-image: url("../img/index.jpeg");
+  background-position-x: 50%;
+  background-position-y: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home-section-header {
+  color: rgb(255, 255, 255);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 42px;
+  font-weight: 500;
+}
+
+.home-section-subheader {
+  color: rgb(255, 255, 255);
+  font-family: "Lato", sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  text-align: left;
+}
+
+.home-section-description {
+  color: rgb(255, 255, 255);
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: left;
+  line-height: 27px;
+}
+
+.home-section-line {
+  border-right: 3px solid white;
+}
+
+@media only screen and (max-width: 1000px) {
+  .home-section-line {
+    border: 0;
+    border-bottom: 3px solid white;
+  }
+}
+
+/* // ------------------------------ zalety ------------------------------ \\ */
+
+.zalety-header {
+  color: rgb(51, 51, 51);
+  font-family: "Lato", sans-serif;
+  font-size: 36px;
+  font-weight: 300;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.zalety-description {
+  line-height: 30px;
+  border-left: 1px solid #666;
+  padding-left: 1vw;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  color: #888;
+  text-align: left;
+}
+
+.zalety-item-container {
+  margin: 80px 0 0 0;
+}
+
+.zalety-material {
+  background: url(../img/material.jpg) fixed;
+  opacity: 0.8;
+  border: 1px solid #666;
+  min-height: 50vh;
+  box-shadow: inset 10px 10px 120px -30px rgba(0, 0, 0, 0.75);
+}
+
+@media only screen and (max-width: 1000px) {
+  .zalety-item-container {
+    margin: 22px 100px 40px 100px;
+  }
+}
+
+/* // ------------------------------ galeria ------------------------------ \\ */
+
+.galeria-img {
+  height: 280px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .galeria-img {
+    height: 260px;
+    padding: 5px 0;
+  }
+}
+
+/* // ------------------------------ oferta ------------------------------ \\ */
+
+.oferta-img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+}
+
+.oferta-img-container {
+  padding: 8px 4px;
+}
+
+.oferta-title {
+  background-color: white;
+  padding: 30px 18%;
+  color: #666;
+  text-align: center;
+  font-size: 26px;
+}
+
+.oferta-link {
+  text-decoration: none;
+}
+
+.oferta-img-container:hover .oferta-title {
+  background-color: #666;
+  color: white;
+}
